@@ -43,3 +43,44 @@ print(context)
 
 # Or
 # del context("technology interest")
+
+# Common dict methods
+"""
+get() - returns value for the specified key if not it returns the default value(None)
+
+update() - updates the dictionary with the elements from another dictionary
+
+pop() - removes the specified key and the corresponding value
+
+"""
+
+# Example 3 : Using get() method
+
+print(context.get('name'))
+
+# Exercise 3: Use the update method to change value in age
+context.update({'age': 78})
+print(context) 
+
+# Exercise 4: Use the if to check if the key 'age' is present in the dictionary and return output
+
+if context['age'] is not None:
+    print(context['age'])
+
+# keys(), value() and the items() methods
+print(context.keys())
+print(context.values())
+print(context.items())
+
+"""
+keys() - return a view of objects taht displays a list of all keys
+values() - returns a view of values  that displays a list of all values
+items() - returns a view of objects that displays a list of keys and values as tuple pairs
+
+"""
+
+# Exercise 5: Use the update method to change the course and add a new key 'Whatsapp_Number' 
+# to the dictionary
+
+context.update({'course' : 'BSCS', 'Whatsapp_Number': '0755880069'})
+print(context)
