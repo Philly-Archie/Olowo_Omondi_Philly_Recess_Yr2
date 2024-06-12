@@ -24,3 +24,22 @@ context = {
 }
 
 print(context['age'])
+
+# Access values
+# Modify values
+
+# Execise 1: Modify age and technology
+context['age'] = 30
+context['technology interest'] = "DevOps"
+print(context)
+
+# Adding keys and values
+context['email'] = 'olowophilly77@gmail.com'
+print(context)
+
+# Exercise 2: Remove key and value
+context.pop("technology interest")
+print(context)
+
+# Or
+# del context("technology interest")
